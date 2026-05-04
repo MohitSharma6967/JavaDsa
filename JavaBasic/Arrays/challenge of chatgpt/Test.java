@@ -77,6 +77,9 @@ public class Test {
         int missing = estimatedSum - currentSum;
         System.out.print("The missing number in array is : " + missing);
     }
+
+
+    
     
     public static void main(String[] args){
         // int number[] = {3, 4, 6, 8 ,1, 7};
@@ -89,8 +92,8 @@ public class Test {
         // int number[] = {1, 2, 3, 4, 5, 6,7,  8, 9};
         // System.out.println(checkSorted(number)); 
 
-        int number[] = {1, 2, 3,4, 5, 6, 8, 9};
-        missingNumber(number); 
+        // int number[] = {1, 2, 3,4, 5, 6, 8, 9};
+        // missingNumber(number); 
         
 
     }
