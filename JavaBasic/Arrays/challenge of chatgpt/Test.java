@@ -64,16 +64,19 @@ public class Test {
 
     public static void missingNumber(int number[]){
 
+        int n = number.length + 1;
+
+        int estimatedSum = n*(n+1)/2; 
+
+        int currentSum = 0;
+
         for(int i = 0; i < number.length; i++){
-            if(number[i] != i+1){
-                System.out.print("Missing number is : " + (i+1));
-                return;
-            }
+            currentSum = currentSum + number[i];
         }
+
+        int missing = estimatedSum - currentSum;
+        System.out.print("The missing number in array is : " + missing);
     }
-
-
-
     
     public static void main(String[] args){
         // int number[] = {3, 4, 6, 8 ,1, 7};
@@ -86,7 +89,7 @@ public class Test {
         // int number[] = {1, 2, 3, 4, 5, 6,7,  8, 9};
         // System.out.println(checkSorted(number)); 
 
-        int number[] = {1, 2, 3, 5, 6, 7, 8, 9};
+        int number[] = {1, 2, 3,4, 5, 6, 8, 9};
         missingNumber(number); 
         
 
